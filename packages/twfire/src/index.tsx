@@ -8,10 +8,6 @@ interface TwTypes {
 class Tw {
   static _type: TwTypes["tag"] = "div";
 
-  constructor() {
-    Tw._type = "div";
-  }
-
   private static extractTailwindClassesFromProps(props: any) {
     const tailwindClasses = Object.keys(props).filter((prop) => {
       const includes = prop.includes("-");

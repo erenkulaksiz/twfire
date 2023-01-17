@@ -1,9 +1,12 @@
 {
   "name": "twfire",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "license": "MIT",
+  "author": {
+    "name": "Eren Kulaksiz",
+    "email": "erenkulaksz@gmail.com"
+  },
   "scripts": {
     "lint": "TIMING=1 eslint \"**/*.ts*\"",
     "build": "tsc",
@@ -15,6 +18,11 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "files": [
+    "lib",
+    "dist",
+    "es"
+  ],
   "devDependencies": {
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
