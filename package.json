@@ -1,5 +1,5 @@
 {
-  "name": "twfire",
+  "name": "root",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
+    "dev": "turbo run dev --filter=twfire --filter=nextjs",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
